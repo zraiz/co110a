@@ -1,5 +1,5 @@
 ## A. NOT
-<img src="NOT Gate.png" alt="NOT gate" title="NOT gate" height="400" />
+<img src="NOT Gate.PNG" alt="NOT gate" title="NOT gate" height="400" />
 
 ### A.1 NOT Code
 ```
@@ -24,7 +24,7 @@ CHIP Not {
 ```
 
 ## B. AND
-<img src="AND Gate.png" alt="AND gate" title="AND gate" height="400" />
+<img src="AND Gate.PNG" alt="AND gate" title="AND gate" height="400" />
 
 ### B.1 AND Code
 ```
@@ -51,7 +51,7 @@ CHIP And {
 ```
 
 ## C. OR
-<img src="OR Gate.png" alt="OR gate" title="OR gate" height="400" />
+<img src="OR Gate.PNG" alt="OR gate" title="OR gate" height="400" />
 
 ### C.1 OR Code
 ```
@@ -79,7 +79,7 @@ CHIP Or {
 ```
 
 ## D. XOR
-<img src="XOR Gate.png" alt="XOR gate" title="XOR gate" height="400" />
+<img src="XOR Gate.PNG" alt="XOR gate" title="XOR gate" height="400" />
 
 ### D.1 XOR Code
 ```
@@ -107,7 +107,7 @@ CHIP Xor {
 ```
 
 ## E. MUX
-<img src="MUX Gate.png" alt="MUX gate" title="MUX gate" height="400" />
+<img src="MUX Gate.PNG" alt="MUX gate" title="MUX gate" height="400" />
 
 ### E.1 MUX Code
 ```
@@ -136,7 +136,7 @@ CHIP Mux {
 ```
 
 ## F. DMUX
-<img src="DMUX Gate.png" alt="DMUX gate" title="DMUX gate" height="400" />
+<img src="DMUX Gate.PNG" alt="DMUX gate" title="DMUX gate" height="400" />
 
 ### F.1 DMUX Code
 ```
