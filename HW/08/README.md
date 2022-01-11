@@ -1,3 +1,5 @@
+## A. CPU
+```
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -83,3 +85,4 @@ CHIP CPU {
 
     PC(in=A, load=forPC, inc=true, reset=reset, out[0..14]=pc);
 }
+```
