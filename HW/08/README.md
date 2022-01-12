@@ -1,4 +1,6 @@
 ## A. CPU
+<img src="CPU.JPG" alt="CPU" title="CPU" height="600" />
+
 ```
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"

@@ -1,3 +1,8 @@
+## A. MEMORY
+<img src="MEMORY.JPG" alt="MEMORY" title="MEMORY" height="400" />
+
+### A.1 MEMORY Code
+```
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -39,3 +44,37 @@ CHIP Memory {
     Mux16(a=S,b=kout,sel=address[13],out=outSk);
     Mux16(a=R,b=outSk,sel=address[14],out=out);
 }
+```
+
+## A. COMPUTER
+<img src="COMPUTER.JPG" alt="COMPUTER" title="COMPUTER" height="400" />
+
+### A.1 COPUTER Code
+```
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/05/Computer.hdl
+
+/**
+ * The HACK computer, including CPU, ROM and RAM.
+ * When reset is 0, the program stored in the computer's ROM executes.
+ * When reset is 1, the execution of the program restarts. 
+ * Thus, to start a program's execution, reset must be pushed "up" (1)
+ * and "down" (0). From this point onward the user is at the mercy of 
+ * the software. In particular, depending on the program's code, the 
+ * screen may show some output and the user may be able to interact 
+ * with the computer via the keyboard.
+ */
+
+CHIP Computer {
+
+    IN reset;
+
+    PARTS:
+    // Put your code here:
+    ROM32K(address=pc,out=instruction);
+    CPU(inM=inM,instruction=instruction,reset=reset,writeM=writeM,outM=outM,addressM=addressM,pc=pc);
+    Memory(in=outM,address=addressM,load=writeM,out=inM);
+}
+```
